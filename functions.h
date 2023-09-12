@@ -59,6 +59,8 @@ bool modifyValueInArray(int array[][10], int rows, int columns, int rwIndex, int
 	return true;   
 }
 
+//this is the function that adds the integer to the and of the aray.
+//throws an error if the dimensions are invalid.
 bool addIntegerToArray(int array [][10], int rows, int columns, int newInteger){
 	
 	if (array == nullptr || rows <= 0 || columns <= 0) {
@@ -68,6 +70,9 @@ bool addIntegerToArray(int array [][10], int rows, int columns, int newInteger){
     return true;
 }
 
+//this is the function that either replaces an element with 0 or removes it completely.
+//when it replaces it sets the value at [x,x] to zero.
+//when it removes it sets the value at [x,x] to NULL.
 bool toRemoveOrReplace(int array[][10], int rows, int columns, int rowIndexToRR,
 						int columnIndexToRR, int action){
 	
